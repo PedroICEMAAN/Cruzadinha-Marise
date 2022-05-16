@@ -244,3 +244,11 @@ body {
 .div-inserir-resp {
     float: left;
 }
+
+
+#img_ice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

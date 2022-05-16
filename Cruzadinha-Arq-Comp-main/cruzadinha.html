@@ -487,11 +487,25 @@
         </div>
         <img src="image-removebg-preview (1).png" onclick="todas_as_resps()">
     </footer>
+    <span id="img_ice" style="display: none;" >
+        <img src="download (1).jpg">
+    </span>
 
 </body>
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
+
+    setTimeout (revelar, 0);
+
+    function revelar() {
+        img_ice.style.display = 'block'
+        setTimeout (esconder, 7000);
+    }
+    function esconder() {
+        img_ice.style.display = 'none'
+    }
+
 
     function plusDivs(n) {
         showDivs(slideIndex += n);
@@ -867,7 +881,7 @@
 
     function resposta_incorreta() {
         alert("Mó Ruim!");
-        var audioElement = new Audio('./audio/error.mp3');
+        var audioElement = new Audio('./audio/videoplayback.mp3');
         audioElement.play();
     }
 </script>
